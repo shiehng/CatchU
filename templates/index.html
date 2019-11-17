@@ -1,0 +1,27 @@
+<!--
+ * @Description: 
+ * @Author: Wu Xie
+ * @Github: https://github.com/shiehng
+ * @Date: 2019-11-17 17:09:50
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catch U</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/all.min.js') }}"></script>
+</head>
+<body>
+<main>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+    </div>
+    <form class="search-box">
+        <input type="text" name="" id="search-text">
+        <button for="search-text" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</main>
+</body>
+</html>
