@@ -19,9 +19,12 @@
         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
     </div>
     <form class="search-box">
-        <input type="text" name="" id="search-text">
+        <input type="text" name="" id="search-text" placeholder="在Catch U上搜索">
         <button for="search-text" type="submit"><i class="fas fa-search"></i></button>
     </form>
 </main>
+<script>
+    document.getElementById('search-text').focus();
+</script>
 </body>
 </html>

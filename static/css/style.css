@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -21,26 +21,44 @@ main {
 .search-box {
     border-radius: 1.5rem;
     padding: 0 1rem;
-    border: 1px solid #000000;
+    border: 1px solid #777;
     height: 3rem;
 }
 .search-box #search-text {
     height: 100%;
+    width: calc(100% - 1.5rem);
     border: none;
     background-color: transparent;
     outline: none;
-    width: 95%;
     font-size: 1.2rem;
 }
 button {
     border: none;
     background-color: transparent;
-    color: #212121;
-    font-size: large;
+    color: #757575;
+    font-size: 1.5rem;
     float: right;
     height: 100%;
-    width: 5%;
     outline: none;
-    cursor:pointer;
+    cursor: pointer;
+}
+.search-box:hover {
+    border-color: #000;
+}
+.search-box:hover > button {
+    color: #212121;
+}
+.search-box:focus-within {
+    border-color: #000;
+}
+input:focus + button {
+    color: #212121;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:-webkit-autofill {
+    -webkit-transition-delay: 99999s;
+    -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
 }
 
