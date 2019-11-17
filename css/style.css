@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+}
+.logo {
+    width: 100%;
+    height: 7rem;
+    text-align: center;
+}
+.logo img {
+    width: 70%;
+    margin: 0 auto;
+}
+.search-box {
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    border: 1px solid #000000;
+    height: 3rem;
+}
+.search-box #search-text {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 95%;
+}
+button {
+    border: none;
+    background-color: transparent;
+    color: #212121;
+    font-size: large;
+    float: right;
+    height: 100%;
+    width: 5%;
+    outline: none;
+    cursor:pointer;
+}
+
